@@ -1,0 +1,181 @@
+body {
+    font-family: sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+h1 {
+    margin: 0 0 20px 0;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+#guest-list {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 5px;
+}
+
+li:last-child {
+    margin-bottom: 0;
+    border-bottom: none;
+}
+
+.guest-name {
+    flex: 1;
+    margin-right: 15px;
+}
+
+.rsvp-button {
+    background-color: #90a8bd;
+    color: rgb(252, 251, 251);
+}
+
+.rsvp-button:hover {
+    background-color: #5a6268;
+}
+
+.attending .rsvp-button {
+    background-color: #17c03f;
+}
+
+.attending .rsvp-button:hover {
+    background-color: #218838;
+}
+
+.remove-button {
+    background-color: #dc3545;
+    color: white;
+}
+
+.remove-button:hover {
+    background-color: #c82333;
+}
+
+li.attending {
+    background-color: #f8f9fa;
+}
+
+.guest-actions button {
+    margin-left: 0.5em;
+    background-color: #dc3545;
+}
+
+/* Dark Theme */
+body.dark-theme {
+    background-color: #296e72;
+    color: #e0e0e0;
+}
+
+body.dark-theme .container {
+    background-color: #1e1e1e;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
+
+body.dark-theme h1 {
+    color: #e0e0e0;
+}
+
+body.dark-theme #theme-toggle {
+    background-color: #2e8b57; /* SeaGreen */
+    color: white;
+}
+
+body.dark-theme input[type="text"],
+body.dark-theme select {
+    background-color: #333;
+    color: #e0e0e0;
+    border-color: #555;
+}
+
+body.dark-theme li {
+    background-color: #2a2a2a;
+    border-color: #444;
+}
+
+body.dark-theme li.attending {
+    background-color: #003300;
+}
+
+body.dark-theme .guest-actions button.toggle-rsvp {
+    background-color: #5a5a5a;
+    color: #e0e0e0;
+}
+
+body.dark-theme li.attending.category-friend {
+    background-color: #154c55;
+}
+
+body.dark-theme li.attending.category-family {
+    background-color: #2c8a42;
+}
+
+body.dark-theme li.attending.category-colleague {
+    background-color: #3b2566;
+}
+
+/* Category Styles */
+li.category-friend {
+    border-left: 5px solid #17a2b8;
+}
+
+li.category-family {
+    border-left: 5px solid #28a745;
+}
+
+li.category-colleague {
+    border-left: 5px solid #6f42c1;
+}
+
+li.attending.category-friend {
+    background-color: #d1ecf1;
+}
+
+li.attending.category-family {
+    background-color: #d4edda;
+}
+
+li.attending.category-colleague {
+    background-color: #e2d9f3;
+}
