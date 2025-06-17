@@ -27,8 +27,6 @@ This is a simple, interactive web application for managing a guest list for an e
 1.  Clone or download the repository.
 2.  Open the `index.html` file in your web browser.
 
-Alternatively, you can run a simple local server (like Python's `http.server`) in the project directory to serve the files.
-
 
 MIT License
 
