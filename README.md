@@ -1,6 +1,6 @@
 # Event Guest List Manager
 
-This is a simple, interactive web application for managing a guest list for an event. It allows you to add guests, remove them, track their RSVP status, and categorize them.
+This is a simple, interactive web application for managing a guest list for an event. It allows you to add guests, remove them, track their RSVP status.
 
 ## Features
 
@@ -8,7 +8,6 @@ This is a simple, interactive web application for managing a guest list for an e
 *   **Remove Guests**: Each guest has a "Remove" button to delete them from the list.
 *   **RSVP Toggling**: Mark guests as "Attending" or "Not Attending". The status is visually indicated.
 *   **Guest Limit**: The list is capped at 10 guests to keep the event manageable. An alert will notify you if the limit is reached.
-*   **Guest Categories**: Assign guests to categories (Friend, Family, Colleague) with unique visual tags.
 *   **Theme Switcher**: Toggle between a light and a dark theme. Your preference is saved in `localStorage`.
 
 ## File Structure
